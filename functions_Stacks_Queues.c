@@ -2,10 +2,10 @@
 /**
  * push - adition new node
  * @stack: new node
- * @n: init double linked lists
+ * @h: init double linked lists
  *
  * Return: new element or NULL
- **/
+**/
 void push(stack_t **stack, unsigned int h)
 {
 stack_t *new;
@@ -33,15 +33,15 @@ new->n = h;
 /**
  * pall - print d_listint
  * @h: double listen
+ * @stack: pointer
  *
- * 
  */
 void pall(stack_t **stack, unsigned int h)
 {
 size_t a = 0;
 h = h;
-if (!= stack)
-exit(EXIT_SUCCES);
+if (stack == NULL)
+exit(EXIT_SUCCESS);
 for (a = 0; *stack != NULL; a++)
 {
 printf("%d\n", (*stack)->n);
@@ -52,8 +52,8 @@ printf("%d\n", (*stack)->n);
 /**
  * pint - print date
  * @stack : pointer
- * @value : int of input
- * @stack : pointer
+ * @h: int
+ *
  */
 
 void pint(stack_t **stack, unsigned int h)
@@ -68,12 +68,11 @@ printf("%d\n", (*stack)->n);
 }
 
 /**
- * pop - Function that remove the top element of the stack
+ * pop - Function that remove
  * @stack : pointer of input
- * @value : int of input
- * @stack : double pointer of input
+ * @h : int of input
+ *
  */
-
 void pop(stack_t **stack, unsigned int h)
 {
 stack_t *new;
@@ -95,7 +94,7 @@ free(new);
 
 /**
  * swap - print date
- * @h : int 
+ * @h : int
  * @stack : pointer
  */
 
